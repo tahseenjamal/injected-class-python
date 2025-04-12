@@ -1,7 +1,9 @@
 class CapitalizedClassNameMeta(type):
     def __init__(cls, name, bases, attrs):
         if not name[0].isupper():
-            raise TypeError(f"Class name '{name}' must start with a capital letter")
+            raise TypeError(
+                f"Class name '{name}' must start with a capital letter"
+            )
         else:
             # Print details of the class name, bases, attributes
             print(name, bases, attrs)
@@ -24,7 +26,9 @@ class Person:
         self.age = age
 
     def __str__(self):
-        return f"{self.name} is {self.age} years old, and is a {self.Profession}"
+        return (
+            f"{self.name} is {self.age} years old, and is a {self.Profession}"
+        )
 
     def __repr__(self):
         return f"Person({self.name}, {self.age})"
@@ -36,7 +40,7 @@ class Profession:
         self.salary = salary
 
     def __str__(self):
-        return f"{self.job} earns {self.salary}"
+        return f"{self.job} earns {self.salary} bitcoin"
 
 
 tahseen = Person("Tahseen", 48)

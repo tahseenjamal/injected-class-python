@@ -41,15 +41,15 @@ This ensures that any class using this metaclass must have its name start with a
 ## 🧪 Example Usage
 
 ```python
-tahseen = Person("Tahseen", 48)
-tahseen.Profession = Profession("Software Engineer", 100000)
+darkstar = Person("Darkstar", 100)
+darkstar.Profession = Profession("Software Engineer", 1)
 
-print(str(tahseen))
+print(str(darkstar))
 ```
 
 ### Output:
 ```
-Tahseen is 48 years old, and is a Software Engineer earns 100000
+Darkstar is 100 years old, and is a Software Engineer earns 1 bitcoin
 ```
 
 ---
